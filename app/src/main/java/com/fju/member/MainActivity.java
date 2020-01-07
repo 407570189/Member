@@ -27,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.name1);
         age = findViewById(R.id.age1);
         gender = findViewById(R.id.gender1);
+        name.setText(sp.getString("NAME",""));
+        age.setText(sp.getString("AGE",""));
+        gender.setText(sp.getString("GENDER",""));
         Name = name.getText().toString();
         Age = age.getText().toString();
         Gender = gender.getText().toString();
